@@ -1,0 +1,176 @@
+/* 
+    Define o estilo geral da página.
+    O body é o corpo inteiro do site.
+*/
+body{
+
+    /* Fonte usada em todos os textos */
+    font-family: Arial, sans-serif;
+
+    /* Cor de fundo da página */
+    background-color: #f4f4f4;
+
+    /* Alinha todo o conteúdo no centro */
+    text-align: center;
+
+    /* Espaço interno da página */
+    padding: 20px;
+
+}
+
+
+/*
+    Estilo das caixas de cada rodada.
+    Cada rodada fica dentro de uma div.
+*/
+#rodada1,
+#rodada2,
+#rodada3,
+#rodada4{
+
+    /* Cor de fundo da caixa */
+    background-color: white;
+
+    /* Largura máxima da caixa */
+    max-width: 700px;
+
+    /* Centraliza a caixa na página */
+    margin: 20px auto;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+    /* Arredonda os cantos da caixa */
+    border-radius: 10px;
+
+    /*
+        Cria uma sombra ao redor da caixa
+        para dar um efeito de cartão.
+    */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+}
+
+
+
+/*
+    Configuração das imagens do jogo.
+*/
+img{
+
+    /* Largura das imagens */
+    width: 250px;
+
+    /* Altura das imagens */
+    height: 250px;
+
+    /*
+        Faz a imagem preencher o espaço
+        sem ficar deformada.
+    */
+    object-fit: cover;
+
+    /* Espaço ao redor das imagens */
+    margin: 15px;
+
+    /* Deixa os cantos arredondados */
+    border-radius: 10px;
+
+}
+
+
+
+/*
+    Estilo dos botões de resposta.
+*/
+button{
+
+    /* Espaço interno do botão */
+    padding: 12px 20px;
+
+    /* Espaço entre os botões */
+    margin: 10px;
+
+    /* Remove a borda padrão */
+    border: none;
+
+    /* Arredonda o botão */
+    border-radius: 8px;
+
+    /* Cor de fundo */
+    background-color: #007bff;
+
+    /* Cor do texto */
+    color: white;
+
+    /* Tamanho do texto */
+    font-size: 16px;
+
+    /*
+        Muda o cursor para uma mão
+        quando passa sobre o botão.
+    */
+    cursor: pointer;
+
+}
+
+
+
+/*
+    Efeito quando o mouse passa
+    por cima do botão.
+*/
+button:hover{
+
+    /* Escurece a cor do botão */
+    background-color: #0056b3;
+
+}
+
+
+
+/*
+    Estilo dos botões depois que
+    a pessoa já respondeu.
+*/
+button:disabled{
+
+    /*
+        Deixa o botão cinza
+        mostrando que não pode mais ser usado.
+    */
+    background-color: gray;
+
+    /* Remove o cursor de clique */
+    cursor: not-allowed;
+
+}
+
+
+
+/*
+    As rodadas 2 e 3 começam escondidas.
+    O JavaScript irá mostrar elas
+    quando o jogador responder.
+*/
+#rodada2,
+#rodada3{
+
+    display: none;
+
+}
+
+
+
+/*
+    Estilo do texto da pontuação final.
+*/
+#pontuacao{
+
+    /* Espaço acima da pontuação */
+    margin-top: 30px;
+
+    /* Cor verde para destacar o resultado */
+    color: green;
+
+}

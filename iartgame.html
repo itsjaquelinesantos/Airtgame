@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Informa ao navegador que o documento está em HTML5 -->
+
+<html lang="pt-BR">
+<!-- Início da página e define o idioma como português do Brasil -->
+
+<head>
+
+    <!-- Configuração para aceitar acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Humano ou IA?</title>
+
+    <!-- Importa o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Título principal do jogo -->
+    <h1>Humano ou Inteligência Artificial?</h1>
+
+    <!-- Explicação para o jogador -->
+    <p>Escolha qual imagem foi criada por IA.</p>
+
+
+    <!-- ================= RODADA 1 ================= -->
+
+    <div id="rodada1">
+
+        <h2>Rodada 1</h2>
+
+        <img src="normanai.png">
+
+        <img src="normanor.jpg">
+
+        <br>
+
+        <button onclick="rodada1('esquerda')">
+            Imagem da esquerda
+        </button>
+
+        <button onclick="rodada1('direita')">
+            Imagem da direita
+        </button>
+
+        <p id="resultado1"></p>
+
+    </div>
+
+
+    <!-- ================= RODADA 2 ================= -->
+
+    <div id="rodada2" style="display: none;">
+
+        <h2>Rodada 2</h2>
+
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.68AMkUtINOuG7xtP2Jo-9wAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+        <img src="https://www.ai-art-designer.de/wp-content/uploads/2024/03/Medieval_art-__2502_genIm-768x768.jpg">
+
+        <br>
+
+        <button onclick="rodada2('esquerda')">
+            Imagem da esquerda
+        </button>
+
+        <button onclick="rodada2('direita')">
+            Imagem da direita
+        </button>
+
+        <p id="resultado2"></p>
+
+    </div>
+
+
+    <!-- ================= RODADA 3 ================= -->
+
+    <div id="rodada3" style="display: none;">
+
+        <h2>Rodada 3</h2>
+
+        <img src="vangoghor.avif">
+
+        <img src="vangoghai.avif">
+
+        <br>
+
+        <button onclick="rodada3('esquerda')">
+            Imagem da esquerda
+        </button>
+
+        <button onclick="rodada3('direita')">
+            Imagem da direita
+        </button>
+
+        <p id="resultado3"></p>
+
+    </div>
+
+
+    <!-- ================= RODADA 4 ================= -->
+
+    <div id="rodada4" style="display: none;">
+
+        <h2>Rodada 4</h2>
+
+        <img src="monetai.avif">
+
+        <img src="monetor.avif">
+
+        <br>
+
+        <button onclick="rodada4('esquerda')">
+            Imagem da esquerda
+        </button>
+
+        <button onclick="rodada4('direita')">
+            Imagem da direita
+        </button>
+
+        <p id="resultado4"></p>
+
+    </div>
+
+
+    <!-- ================= RODADA 5 ================= -->
+
+    <div id="rodada5" style="display: none;">
+
+        <h2>Rodada 5</h2>
+
+        <img src="picassoai.avif">
+
+        <img src="picassoor.png">
+
+        <br>
+
+        <button onclick="rodada5('esquerda')">
+            Imagem da esquerda
+        </button>
+
+        <button onclick="rodada5('direita')">
+            Imagem da direita
+        </button>
+
+        <p id="resultado5"></p>
+
+    </div>
+
+
+    <!-- Aqui aparecerá a pontuação final -->
+    <h2 id="pontuacao"></h2>
+
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
